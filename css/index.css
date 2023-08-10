@@ -7,12 +7,13 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .wrapper {
     width: 100%;
     max-width: 1132px;
-    margin: 0 auto;
 }
 
 /*=========== header ============*/
@@ -20,18 +21,12 @@ body {
 header {
     width: 100%;
     position: relative;
-    padding: 29px 46px;
+    padding: 30px 46px;
 }
 
 header > .flex-container {
     display: flex;
     justify-content: space-between;
-}
-
-.mainmenu {
-    position: absolute;
-    top:29px;
-    right: 46px;
 }
 
 .mainmenu > .gnb {
@@ -47,22 +42,62 @@ header > .flex-container {
     font-weight: bold;
 }
 
-.moblie-btn > span{
-    width: 30px;
-    height: 2px;
-    background-color: ;
+.mobile-btn {
+    display: none;
 }
 
-@media (max-width:768px) {
-
+.mobile-btn > span{
+    display: block;
+    width: 30px;height: 2px;
+    background-color: #3f51b5;
 }
+
+.mobile-btn > span:nth-child(2){
+    margin: 10px 0;
+}
+
+
+/*tablet*/
 
 @media (max-width:1024px) {
 
 }
 
+/*moblie*/
 
+@media (max-width:768px) {
+    
+    header {
+        height: 80px;
+        padding: 30px 20px;
+    }
+
+    .mobile-btn {
+        display: block;
+    }
+
+    .mainmenu {
+        display: none;
+    }
+}
 
 /*=========== main ============*/
+
+main {
+    width: 100%;
+}
+
+/*slider*/
+.slider img {
+    width: 100%;
+}
+
+/*display*/
+
+#display > .wrapper> .flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /*=========== footer ============*/

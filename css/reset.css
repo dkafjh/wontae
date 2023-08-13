@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font: 16px 'Montserrat';
+}
+
 ul,
 ol,
 li {
@@ -44,20 +48,20 @@ h3{
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 1.625em;
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 	2.625em;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 1.4em;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.2em;
+    font-size: 1em;
+    line-height: 1.6em;
     font-family: sans-serif;
 }
 
